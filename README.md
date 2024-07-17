@@ -1,2 +1,2 @@
-# lab958331
-This is repository of 652110247-Rawipat Tipparat
+# hcg-chaper-1
+This is repository of 560651023-HCG-chapter1
