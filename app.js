@@ -1,36 +1,10 @@
-const http = require('http')
-const fs = require('fs')
+const express = require('express')
+const app = express()
 
-const PORT = 3000
-
-const server = http.createServer((req,res) => {
-
-    switch (req.url) {
-
-        case '/':
-          fs.readFile('./bubble.html',(error,data) => {
-            res.statusCode = 200
-            res.setHeader('Content-Type','text/html')
-            res.end(data)
-          })
-          break
-    
-        case '/hello':
-          fs.readFile('./hello.html',(error,data) => {
-            res.statusCode = 200
-            res.setHeader('Content-Type','text/html')
-            res.end(data)
-          })
-          break
-    
-        default:
-          res.statusCode = 404
-          res.setHeader('Content-Type','text/html')
-          res.end('Not found!')
-      }
+app.get('/hello', function(req, res){
+    res.send("Hello World <br/>Bye World...")
 })
 
-server.listen(PORT,() => {
-  console.log('Server is running... http://127.0.0.1:3000/')
+app.listen(9999,function(){
+console.log("Server is running on PORT 9999")
 })
-
