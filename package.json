@@ -1,8 +1,8 @@
 {
-  "name": "hcg-chaper-1",
+  "name": "express01",
   "version": "1.0.0",
-  "description": "This is repository of 560651023-HCG-chapter1",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
